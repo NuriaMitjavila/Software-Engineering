@@ -34,11 +34,11 @@
 
 • Block 0. Subject introduction
 
-• Block 1. Introduction to software engineering: Software engineering principles, history, process, methods, tools and development paradigms
+• Block 1. Introduction: Software engineering principles, history, process, methods, tools and development paradigms
 
 • Block 2. Software management principles: Tools and methodologies, Agile management: SCRUM
 
-• Block 3. Software modeling: Software Analysis (Requirements definition, UML), Software Design (concepts, modular)
+• Block 3. Software modeling: Software Analysis (Requirements definition, UML) and design (concepts, modular)
 
 • Block 4. Software quality: Validation concepts and Software Testing
 #
