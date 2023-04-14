@@ -44,7 +44,7 @@
 #
 **Practicum**: During the whole course you will (partially) develop a medium level project:
 
-● Subject proposed by the students, but approved by the supervisor. Groups of 3-4 people. 9 sessions of 2 hours (4 seminars, 5 plenary).
+● Subject proposed by the students, but approved by the supervisor. Groups of 3-4 people. 9 sessions of 2 hours.
 
 ● One initial brainstorming session to select the subject of the project.
 
