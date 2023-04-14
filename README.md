@@ -52,7 +52,7 @@
 
 ● Third session to setup the tools of the environment and start to work.
 
-● Four sessions to achieve different goals. In seminars the supervisor will discuss individually the work done by each group.
+● Four sessions to achieve different goals. In seminars the supervisor will discuss individually the group work.
 
 ● Two final sessions (4hours-10groups) to present the results of the project
 #
