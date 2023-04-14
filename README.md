@@ -5,10 +5,7 @@ Objective of the subject: this course covers the basics of the most used Softwar
 ● Includes the needs for methodologies of software development: Analysis of software requirements, design, implementation and validation
 
 ● With an overview of the basic elements of Object-Oriented Design: UML, OO abstraction, testing tools and methodologies and model views
-
 #
-
-
 Conceptual definitions: What are the software engineering, a methodology and the OO design? An informal definition of these concepts can be based on these ideas:
 
 ● Software engineering is a discipline to develop software with a good organization and following a specific methodology.
