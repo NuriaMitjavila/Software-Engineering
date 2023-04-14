@@ -8,11 +8,11 @@
 #
 **Conceptual definitions**: What are the software engineering, a methodology and the OO design? An informal definition of these concepts are:
 
-● Software engineering is a discipline to develop software with a good organization and following a specific methodology.
+● Software engineering: discipline to develop software with a good organization and following a specific methodology.
 
 ● A methodology is a set of rules, methods and techniques to achieve an objective.
 
-● The Object-Oriented Design is a technique to model a software system using the principles of the OO programming.
+● Object-Oriented Design is a technique to model a software system using the principles of the OO programming.
 #
 **General objective**: Provide an overall and ordered view of the software development process which does not only covers programming. We will introduce the main activities that constitute the development process. Acquires a vision of what processes in software development:
 
@@ -38,7 +38,7 @@
 
 • Block 2. Software management principles: Tools and methodologies, Agile management: SCRUM
 
-• Block 3. Software modeling: Software Analysis (Requirements definition, UML), Software Design (Design concepts, modular design)
+• Block 3. Software modeling: Software Analysis (Requirements definition, UML), Software Design (concepts, modular)
 
 • Block 4. Software quality: Validation concepts and Software Testing
 #
