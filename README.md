@@ -8,6 +8,7 @@ Objective of the subject: this course covers the basics of the most used Softwar
 
 
 
+
 Conceptual definitions: What are the software engineering, a methodology and the OO design? An informal definition of these concepts can be based on these ideas:
 
 ● Software engineering is a discipline to develop software with a good organization and following a specific methodology.
