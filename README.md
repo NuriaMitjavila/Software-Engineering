@@ -58,4 +58,4 @@
 #
 **Working methodology**: Scrum relevant topics are the product backlog (list of requirements of the software to develop), sprint backlog (a group of requirements used during the sprint), scrum-master (manage the tasks, do daily monitoring…), product-owner (it is usually the client, supervisor), daily-meeting (it is explained briefly the progress) and sprint-review (each session is discussed more in detail the progress)
 
-● Software tools: online repository (github), task manager (trello), simple UML modeler (plantuml) and documentation (MD, PDF, PNG or UML)
+● Software tools: online repository (github), task manager (trello), simple UML modeler (plantuml) and documentation
