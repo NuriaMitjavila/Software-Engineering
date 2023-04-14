@@ -28,15 +28,15 @@
 #
 **Topics**
 
-• Block 0. Subject introduction
+● Block 0. Subject introduction
 
-• Block 1. Introduction: Software engineering principles, history, process, methods, tools and development paradigms
+● Block 1. Introduction: Software engineering principles, history, process, methods, tools and development paradigms
 
-• Block 2. Software management principles: Tools and methodologies, Agile management: SCRUM
+● Block 2. Software management principles: Tools and methodologies, Agile management: SCRUM
 
-• Block 3. Software modeling: Software Analysis (Requirements definition, UML) and design (concepts, modular)
+● Block 3. Software modeling: Software Analysis (Requirements definition, UML) and design (concepts, modular)
 
-• Block 4. Software quality: Validation concepts and Software Testing
+● Block 4. Software quality: Validation concepts and Software Testing
 #
 **Practicum**: During the whole course you will (partially) develop a medium level project:
 
