@@ -1,19 +1,10 @@
 # Software-Engineering
 
 **Participants**: Mònica Torner (monica.torner@alum.esci.upf.edu), Núria Mitjavila (nuria.mitjavila@alum.esci.upf.edu), Marta Ortigas (marta.ortigas@alum.esci.upf.edu)
+#
+**ActiveSite**: "Empower your health with Active Site's continuous monitoring"
 
-**ActiveSite**: During the whole course you will (partially) develop a medium level project:
+Artificial Intelligence for the detection of glucose, hydration, and other nutritional and health items with continuous monitoring from a sensor
 
-● Subject proposed by the students, but approved by the supervisor. Groups of 3. 9 sessions of 2 hours.
-
-● One initial brainstorming session to select the subject of the project.
-
-● Second session to present the subject and receive approval.
-
-● Third session to setup the tools of the environment and start to work.
-
-● Four sessions to achieve different goals. In seminars the supervisor will discuss individually the group work.
-
-● Two final sessions (4hours-10groups) to present the results of the project
 #
 **Trello**: This is the link to our trello: https://trello.com/w/softwareengineering67293311/home
