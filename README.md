@@ -1,6 +1,12 @@
 # Software-Engineering
 
-**Participants**: Mònica Torner (monica.torner@alum.esci.upf.edu), Núria Mitjavila (nuria.mitjavila@alum.esci.upf.edu), Marta Ortigas (marta.ortigas@alum.esci.upf.edu)
+**Participants**:
+
+- Mònica Torner (monica.torner@alum.esci.upf.edu)
+
+- Núria Mitjavila (nuria.mitjavila@alum.esci.upf.edu)
+
+- Marta Ortigas (marta.ortigas@alum.esci.upf.edu)
 #
 **ActiveSite**: "Empower your health with Active Site's continuous monitoring"
 
