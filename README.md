@@ -10,7 +10,7 @@
 #
 **ActiveSite**: "Empower your health with Active Site's continuous monitoring"
 
-- Artificial Intelligence for the detection of glucose, hydration, and other nutritional and health items with continuous monitoring from a sensor
+- Artificial Intelligence for the detection of glucose, hydration, and other nutritional and health items with sensor continuous monitoring
 
 #
 **Trello**: This is the link to our trello: https://trello.com/w/softwareengineering67293311/home
