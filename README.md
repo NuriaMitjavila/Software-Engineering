@@ -1,5 +1,7 @@
 # Software-Engineering
 
+**Participants**: Mònica Torner (monica.torner@alum.esci.upf.edu), Núria Mitjavila (nuria.mitjavila@alum.esci.upf.edu), Marta Ortigas (marta.ortigas@alum.esci.upf.edu)
+
 **ActiveSite**: During the whole course you will (partially) develop a medium level project:
 
 ● Subject proposed by the students, but approved by the supervisor. Groups of 3. 9 sessions of 2 hours.
