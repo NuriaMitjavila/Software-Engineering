@@ -13,4 +13,4 @@
 - Artificial Intelligence for the detection of glucose, hydration, and other nutritional and health items with sensor continuous monitoring
 
 #
-**Trello**: This is the link to our trello: https://trello.com/w/softwareengineering67293311/home
+**Trello**: This is the link to our Task Board Tool: https://trello.com/w/softwareengineering67293311/home
