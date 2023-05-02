@@ -10,7 +10,8 @@ rectangle System {
   usecase "Analysis" as External
 }
 
+Sensor ..> User
 Sensor --> monitor
+External --> Doctor
 User --> Goals
-Doctor --> External
 @enduml
