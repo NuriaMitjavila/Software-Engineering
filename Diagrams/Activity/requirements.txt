@@ -1,5 +1,0 @@
-Functional Requirements:
-- User Registration
-- Data Collection
-- Data Processing
-- User Interface
