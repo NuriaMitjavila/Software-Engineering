@@ -1,0 +1,17 @@
+@startuml
+skinparam actorStyle awesome
+left to right direction
+actor User
+actor Doctor
+actor Sensor
+rectangle System {
+  usecase "Monitor" as monitor
+  usecase "Goals" as Goals
+  usecase "Analysis" as External
+}
+
+Sensor ..> User
+Sensor --> monitor
+External --> Doctor
+User --> Goals
+@enduml
