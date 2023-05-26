@@ -4,21 +4,22 @@ left to right direction
 actor User
 actor Doctor
 rectangle System {
-  usecase "Register" as R
-  usecase "Goals" as Goals
-  usecase "Capure data" as data
-  usecase "Optional data" as d
+  usecase "User Registration" as R
+  usecase "User Interface" as Goals
+  usecase "Data Collection" as data
+  usecase "Data Processing" as d
   usecase "Panel" as External
 }
 rectangle Sensor {
   usecase "Extract Data" as i
 }
 
-User --> d
+data ..> d
+d ..> External
 User --> R
 User --> External
-User .. Sensor
+User ..> Sensor: wears
 Doctor --> External
 User --> Goals
-data --> i
+i --> data
 @enduml
