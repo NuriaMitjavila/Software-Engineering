@@ -1,16 +1,15 @@
 Proposed architecture for the software:
 
 1. Mobile App (ActiveSite App):
-- User Interface: The mobile app will provide a user-friendly interface for users to interact with the system, set goals, view personal information, and monitor their health metrics.
-- App Data: The mobile app will store user-specific data such as user profiles, personal information, goals, and locally cached sensor data for offline access.
+- User Interface: interact with the system, set goals, view personal information, and monitor the health metrics.
+- App Data: Store user-specific data like profiles, personal information, goals and sensor data for offline access
 
 2. Sensor:
-- Data Communication: The sensor will communicate directly with the mobile app to transmit real-time sensor data, including glucose levels, hydration levels, and other metrics.
+- Data Communication: sensor will communicate directly with the mobile app to transmit real-time sensor data, including glucose levels, hydration levels, and other metrics.
 
 3. Database Server:
-- Data Storage: The database server will store and manage the persistent data of the system, including user profiles, personal information, goals, and historical sensor data.
-- Data Communication: The mobile app will communicate with the database server via APIs to store and retrieve data as needed.
-
+- Data Storage: store and manage the persistent data of the system, profiles, goals and historical sensor data.
+- Data Communication: the app will communicate with the database server via APIs to store and retrieve data.
 
 
 To implement the database server, we can consider popular database management systems like MySQL, PostgreSQL, or MongoDB. These databases provide robust features for data storage, retrieval, and management. Additionally, we can utilize a web server with an API framework to handle the communication between the mobile app and the database server. These are some API capabilities to consider:
