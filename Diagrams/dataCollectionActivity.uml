@@ -1,0 +1,18 @@
+@startuml
+(*) --> "User input"
+If "User created"
+--> [Yes] "Profile information"
+--> [No] "Create profile"
+
+If "Valid information?"
+--> [No] "Error"
+--> [Yes] "Profile information"
+
+"Profile information" --> "Set goals"
+If "Did the user set the mode?"
+--> [Yes] "View/Edit information"
+--> [No] "Add information"
+
+"Add information" --> "View/Edit information"
+"View/Edit information" --> (*)
+@enduml
