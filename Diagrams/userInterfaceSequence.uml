@@ -1,0 +1,10 @@
+@startuml
+User --> App: Input data
+User --> App: View metrics
+User --> App: Access insights
+User --> App: Customize alerts
+App --> User: Send alerts
+User --> App: Visualize user data
+App --> User: Show user data
+User --> App: Modify user data
+@enduml
