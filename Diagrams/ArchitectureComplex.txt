@@ -1,0 +1,42 @@
+@startuml
+
+rectangle "Mobile App\n(ActiveSite App)" as MobileApp {
+  rectangle "User Interface" as UserInterface
+  rectangle "App Data" as AppData
+}
+
+rectangle "Sensor" as Sensor
+
+rectangle "Web Server, Panel" as WebServer {
+  rectangle "API" as APILayer
+  rectangle "Data Access" as DALayer
+}
+
+rectangle "Database Server" as DatabaseServer {
+  rectangle "User Profiles" as UserProfiles
+  rectangle "Personal Information" as PersonalInfo
+  rectangle "Goals" as Goals
+  rectangle "Sensor Data" as SensorData
+}
+
+actor "User" as User
+actor "Doctor" as Doctor
+
+User -- MobileApp
+User -- WebServer
+Doctor -- WebServer
+
+MobileApp --> Sensor : Sensor Data
+MobileApp --> WebServer : API Calls
+WebServer --> DatabaseServer : Database Operations
+
+MobileApp --> UserInterface
+MobileApp --> AppData
+WebServer --> APILayer
+WebServer --> DALayer
+DatabaseServer --> UserProfiles
+DatabaseServer --> PersonalInfo
+DatabaseServer --> Goals
+DatabaseServer --> SensorData
+
+@enduml
