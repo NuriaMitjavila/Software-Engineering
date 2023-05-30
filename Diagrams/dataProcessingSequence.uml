@@ -1,0 +1,6 @@
+@startuml
+App --> MLA: Collect data
+App --> MLA: Process data
+MLA --> App: Analysis
+MLA --> App: Recommendations
+@enduml
