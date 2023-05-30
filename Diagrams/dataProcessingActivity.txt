@@ -1,7 +1,0 @@
-@startuml
-(*) --> "Machine learning algorithm"
-"Machine learning algorithm" --> "Store data"
-"Store data" --> "Provide recommendations and insights"
-"Provide recommendations and insights" --> "Real time analysis"
-"Real time analysis" --> (*)
-@enduml
