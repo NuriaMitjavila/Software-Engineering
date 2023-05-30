@@ -1,0 +1,11 @@
+@startuml
+(*) --> "User interface"
+"User interface" --> "Input data"
+"Input data" --> "View real-time metrics"
+"View real-time metrics" --> "Access recommendations and insights"
+"Access recommendations and insights" --> "Customize alerts and notifications"
+"Customize alerts and notifications" --> "Visualizations of user data over time"
+If "Customization enabled?" then
+--> [Yes] "Custom alerts and notifications"
+"Custom alerts and notifications" --> (*)
+@enduml
