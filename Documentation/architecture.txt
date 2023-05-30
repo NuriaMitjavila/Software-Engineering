@@ -13,9 +13,6 @@ Proposed architecture for the software:
 
 
 To implement the database server, we can consider popular database management systems like MySQL, PostgreSQL, or MongoDB. These databases provide robust features for data storage, retrieval, and management. Additionally, we can utilize a web server with an API framework to handle the communication between the mobile app and the database server. These are some API capabilities to consider:
-
-1. Node.js with Express: Node.js is a powerful JavaScript runtime that can be used with the Express.js framework to build scalable and efficient APIs. Large and active community and offers excellent performance.
-
+1. Node.js with Express: Node.js is a JavaScript runtime that can be used with the Express.js framework to build scalable and efficient APIs. Large and active community and offers excellent performance.
 2. Ruby on Rails: A popular web framework written in Ruby. It provides a comprehensive set of tools and conventions for building APIs quickly and efficiently.
-
-3. Django: A high-level Python web framework that follows the model-view-controller (MVC) architectural pattern. It has built-in support for creating APIs and offers robust features for database integration.
+3. Django: High-level Python web framework that follows the model-view-controller (MVC) architectural pattern. It has built-in support for creating APIs and offers robust features for database integration.
