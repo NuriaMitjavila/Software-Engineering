@@ -1,0 +1,6 @@
+@startuml
+User --> App: Create account
+User --> App: Set goals
+App --> User: Profile created
+User --> App: View/edit information
+@enduml

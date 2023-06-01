@@ -1,0 +1,14 @@
+@startuml
+(*) --> if "Sensor connected?" then
+    --> [No] "Manual input"
+else
+    --> [Yes] "Store"
+
+--> if "Add manual information? \r" then
+    --> [Yes] "Manual input"  
+else
+    --> [No] "Store data"
+
+"Manual input" --> "Store data"
+"Store data" --> (*)
+@enduml
