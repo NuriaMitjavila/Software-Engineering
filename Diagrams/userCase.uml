@@ -4,22 +4,31 @@ left to right direction
 actor User
 actor Doctor
 rectangle System {
-  usecase "User Registration" as R
-  usecase "User Interface" as Goals
-  usecase "Data Collection" as data
-  usecase "Data Processing" as d
-  usecase "Panel" as External
+  usecase "Sensor Pairing" as SP
+  usecase "User Registration" as UR
+  usecase "User Interface" as UI
+  usecase "Data Collection" as DC
+  usecase "Data Processing" as DP
+  usecase "Profile Management" as PM
+  usecase "Notifications" as N
 }
 rectangle Sensor {
-  usecase "Extract Data" as i
+  usecase "Extract Data" as ED
 }
-
-data ..> d
-d ..> External
-User --> R
+rectangle Panel {
+  usecase "Panel" as External
+}
+DC ..> DP
+DP ..> External
+User --> UR
 User --> External
 User ..> Sensor: wears
 Doctor --> External
-User --> Goals
-i --> data
+User --> UI
+ED --> SP
+SP --> DC 
+User --> PM
+N --> User
+DP --> N
+N --> Doctor
 @enduml
