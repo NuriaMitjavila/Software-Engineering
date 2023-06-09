@@ -1,18 +1,30 @@
 @startuml
-(*) --> "User input"
-If "User created"
---> [Yes] "Profile information"
---> [No] "Create profile"
+(*) --> "User interface"
 
-If "Valid information?"
---> [No] "Error"
---> [Yes] "Profile information"
+if (User has account?) then
+  --> [Yes] "Input data"
+else
+  --> [No] "User registration"
+  "User registration" --> "Create user profile"
+  "Create user profile" --> "Set personal goals"
+  "Set personal goals" --> "Input data"
 
-"Profile information" --> "Set goals"
-If "Did the user set the mode?"
---> [Yes] "View/Edit information"
---> [No] "Add information"
+  if (Data is correct?) then
+    --> [Yes] "Validate input"
+    "Validate input" --> [No] "Display error message"
+    "Display error message" --> "Input data"
+    "Validate input" --> [Yes] "Store input data"
+    "Store input data" --> "View real-time metrics"
+  else
+    --> [No] "Input data"
+  endif
 
-"Add information" --> "View/Edit information"
-"View/Edit information" --> (*)
+endif
+
+"Input data" --> "Input data from sensor"
+"Input data from sensor" --> "Process sensor data"
+"Process sensor data" --> "Update real-time metrics"
+"Update real-time metrics" --> (*)
+"View real-time metrics" --> "Access recommendations and insights"
+"Access recommendations and insights" --> (*)
 @enduml
