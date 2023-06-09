@@ -1,6 +1,6 @@
 @startuml
-App --> MLA: Collect data
-App --> MLA: Process data
-MLA --> App: Analysis
-MLA --> App: Recommendations
+App --> Database: Collected data
+Database --> MLA: Collected data to process
+MLA --> Database: Processed data
+Database --> App: Analysis and Recommendations
 @enduml
