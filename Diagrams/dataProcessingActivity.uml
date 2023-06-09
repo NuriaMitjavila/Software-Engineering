@@ -1,7 +1,21 @@
 @startuml
 (*) --> "Machine learning algorithm"
-"Machine learning algorithm" --> "Store data"
-"Store data" --> "Provide recommendations and insights"
-"Provide recommendations and insights" --> "Real time analysis"
-"Real time analysis" --> (*)
+
+if (Input available?) then
+  --> [Yes] "Store data"
+
+  if (Input is correct?) then
+    --> [Yes] "Provide recommendations and insights"
+    "Provide recommendations and insights" --> "Real-time analysis"
+  else
+    --> [No] "Display error message"
+    "Display error message" --> (*)
+  endif
+
+else
+  --> [No] "No input available"
+  "No input available" --> (*)
+endif
+
+"Real-time analysis" --> (*)
 @enduml
