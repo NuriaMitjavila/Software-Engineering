@@ -1,0 +1,75 @@
+@startuml
+class MobileApp {
+  - userId: String
+  - username: String
+  - password: String
+  + login(username: String, password: String): boolean
+  + registerUser(username: String, password: String): boolean
+  + getGoals(): List<Goal>
+  + getAlerts(): List<Alert>
+}
+
+class Sensor {
+  - sensorId: String
+  - data: SensorData
+  + connect(): void
+  + disconnect(): void
+  + sendData(data: SensorData): void
+  + receiveData(): SensorData
+}
+
+class Panel {
+  + displayData(data: List<Measurement>): void
+}
+
+class DataProcessor {
+  + process(data: SensorData): ProcessedData
+}
+
+class API {
+  - data: List<MobileApp>
+  + saveData(record: MobileApp): void
+  + getData(): List<MobileApp>
+}
+
+class WebServer {
+  + sendData(data: RemoteServerAccess): void
+  + receiveData(): API
+  + saveData(record: Database): void
+  + getData(): List<API>
+}
+
+class Database {
+  + saveData(record: Database): void
+}
+
+class Goal {
+  - type: String
+  - value: double
+  + getType(): String
+  + getValue(): double
+}
+
+class Alert {
+  - type: String
+  - threshold: double
+  + getType(): String
+  + getThreshold(): double
+}
+
+class DataCollector {
+  + collect(data: SensorData): CollectedData
+}
+
+DataCollector ..> Sensor
+MobileApp --* Goal
+MobileApp --* Alert
+MobileApp -- DataProcessor
+DataProcessor -- DataCollector
+MobileApp <.. API
+
+WebServer -- Panel
+WebServer ..> API
+WebServer -- Database
+
+@enduml

@@ -1,0 +1,28 @@
+@startuml
+class MobileApp {
+  - userId: String
+  - username: String
+  - password: String
+  + login(username: String, password: String): boolean
+  + registerUser(username: String, password: String): boolean
+  + getGoals(): List<Goal>
+  + getAlerts(): List<Alert>
+}
+
+class API {
+  - data: List<MobileApp>
+  + saveData(record: MobileApp): void
+  + getData(): List<MobileApp>
+}
+
+class WebServer {
+  + sendData(data: RemoteServerAccess): void
+  + receiveData(): API
+  + saveData(record: Database): void
+  + getData(): List<API>
+}
+
+MobileApp <.. API
+WebServer ..> API
+
+@enduml

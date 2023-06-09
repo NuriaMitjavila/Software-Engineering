@@ -1,0 +1,27 @@
+@startuml
+class Panel {
+  + displayData(data: List<Measurement>): void
+}
+
+class API {
+  - data: List<MobileApp>
+  + saveData(record: MobileApp): void
+  + getData(): List<MobileApp>
+}
+
+class WebServer {
+  + sendData(data: RemoteServerAccess): void
+  + receiveData(): API
+  + saveData(record: Database): void
+  + getData(): List<API>
+}
+
+class Database {
+  + saveData(record: Database): void
+}
+
+WebServer -- Panel
+WebServer ..> API
+WebServer -- Database
+
+@enduml
