@@ -1,6 +1,14 @@
 @startuml
 User --> App: Create account
+App --> Database: Save account information
+Database --> App: Confirmation account data is saved
+App --> User: Display the goals
 User --> App: Set goals
-App --> User: Profile created
+App --> Database: Save goals
+Database --> App: Confirmation goals are saved
+App --> User: Created profile
 User --> App: View/edit information
+App --> Database: Save information
+Database --> App: Confirmation data is saved
+App --> User: Display information
 @enduml
