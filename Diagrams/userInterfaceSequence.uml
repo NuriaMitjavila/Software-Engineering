@@ -1,19 +1,19 @@
 @startuml
 User --> App: Input data
-App --> Database: Save data
-Database --> App: Confirmation data receveid
+App --> Web_server: Save data
+Web_server --> App: Confirmation data receveid
 App --> User: Dispaly confirmation data receveid
 User --> App: View metrics
 App --> User: Display the metrics
 User --> App: Access insights
 App --> User: Display insights
 User --> App: Customize alerts
-App --> Database: Save alert customization
-Database --> App: Confirmation alert customization is saved
+App --> Web_server: Save alert customization
+Web_server --> App: Confirmation alert customization is saved
 App --> User: Send alerts
 User --> App: Visualize user data
 App --> User: Show user data
 User --> App: Modify user data
-App --> Database: Save user data
-Database --> App: Confirmation data saved
+App --> Web_server: Save user data
+Web_server --> App: Confirmation data saved
 @enduml
