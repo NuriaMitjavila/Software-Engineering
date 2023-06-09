@@ -1,13 +1,21 @@
 @startuml
-(*) --> "User Interface"
-"User Interface" --> "Input Data"
-"Input Data" --> "View Real-time Metrics"
-"View Real-time Metrics" --> "Access Recommendations and Insights"
-"Access Recommendations and Insights" --> "Customize Alerts and Notifications"
-"Customize Alerts and Notifications" --> "Visualizations of User Data over Time"
-if "Customization Enabled?" then
-  --> [Yes] "Custom Alerts and Notifications"
-  "Custom Alerts and Notifications" --> (*)
+(*) --> "User interface"
+"User interface" --> "Input data"
+
+if (Input is correct?) then
+  --> [Yes] "View real-time metrics"
+else
+  --> [No] "Display error message"
+  "Display error message" --> "Input data"
+endif
+
+"View real-time metrics" --> "Access recommendations and insights"
+"Access recommendations and insights" --> "Customize alerts and notifications"
+"Customize alerts and notifications" --> "Visualizations of user data over time"
+
+If "Customization enabled?" then
+  --> [Yes] "Custom alerts and notifications"
+  "Custom alerts and notifications" --> (*)
 else
   --> [No] (*)
 endif
