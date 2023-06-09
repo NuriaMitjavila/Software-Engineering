@@ -1,6 +1,6 @@
 @startuml
-Sensor --> App: Data collection
-App --> User: Data received
-User --> App: Manual data input
-App --> Sensor: Data collection done
+App --> Web_server: Collected data
+Web_server --> MLA: Collected data to process
+MLA --> Web_server: Processed data
+Web_server --> App: Analysis and Recommendations
 @enduml
