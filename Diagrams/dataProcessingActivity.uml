@@ -1,21 +1,22 @@
 @startuml
-(*) --> "Machine learning algorithm"
+(*) --> "Web server"
 
-if (Input available?) then
+if (Data available?) then
   --> [Yes] "Store data"
 
-  if (Input is correct?) then
-    --> [Yes] "Provide recommendations and insights"
-    "Provide recommendations and insights" --> "Real-time analysis"
+  if (Data is correct?) then
+    --> [Yes] "Data processing"
+    "Data processing" --> "Provide recommendations and insights" 
   else
-    --> [No] "Display error message"
-    "Display error message" --> (*)
+    --> [No] "Sends error message to the app"
+    "Sends error message to the app" --> "Display error message"
+    "Display error message" --> (*1)
   endif
 
 else
-  --> [No] "No input available"
-  "No input available" --> (*)
+  --> [No] "Waits for data"
+  "Waits for data" --> "Web server"
 endif
 
-"Real-time analysis" --> (*)
+"Provide recommendations and insights" --> (*)
 @enduml
