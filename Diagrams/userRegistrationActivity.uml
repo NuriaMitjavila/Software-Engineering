@@ -1,30 +1,25 @@
 @startuml
 (*) --> "User interface"
 
-if (User has account?) then
-  --> [Yes] "Input data"
+if (User has an account?) then
+  --> [Yes] "User enters the app"
+  "User enters the app" --> (*)
 else
-  --> [No] "User registration"
-  "User registration" --> "Create user profile"
-  "Create user profile" --> "Set personal goals"
-  "Set personal goals" --> "Input data"
-
-  if (Data is correct?) then
-    --> [Yes] "Validate input"
-    "Validate input" --> [No] "Display error message"
-    "Display error message" --> "Input data"
-    "Validate input" --> [Yes] "Store input data"
-    "Store input data" --> "View real-time metrics"
+  --> [No] "User registration process begins"
+  "User registration process begins" --> "Input user personal data"
+  "Input user personal data" --> "Validation email"
+  if (email received?) then
+  --> [No] "Resend email"
+  "Resend email" --> "Validation email"
   else
-    --> [No] "Input data"
-  endif
-
+  --> [Yes] "Wait for email validation"
+    if (email validated?) then
+    --> [Yes] "Selection of the preferred mode "
+    else
+    --> [No] "Input user personal data"
+  
+"Selection of the preferred mode " --> "User registration process ends"
+"User registration process ends" --> (*1)
 endif
-
-"Input data" --> "Input data from sensor"
-"Input data from sensor" --> "Process sensor data"
-"Process sensor data" --> "Update real-time metrics"
-"Update real-time metrics" --> (*)
-"View real-time metrics" --> "Access recommendations and insights"
-"Access recommendations and insights" --> (*)
+  
 @enduml
