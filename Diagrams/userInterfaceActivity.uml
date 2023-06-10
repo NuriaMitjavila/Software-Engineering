@@ -1,22 +1,24 @@
 @startuml
-(*) --> "User interface"
-"User interface" --> "Input data"
+(*) --> "User enters app"
 
-if (Input is correct?) then
-  --> [Yes] "View real-time metrics"
+if (What user does?) then
+  --> [View data] "View real-time metrics"
 else
-  --> [No] "Display error message"
-  "Display error message" --> "Input data"
+  --> [Input data] "App sends data to the Web server"
+  "App sends data to the Web server" --> (*)
 endif
 
 "View real-time metrics" --> "Access recommendations and insights"
 "Access recommendations and insights" --> "Customize alerts and notifications"
-"Customize alerts and notifications" --> "Visualizations of user data over time"
 
-If "Customization enabled?" then
+
+If "Any changes?" then
   --> [Yes] "Custom alerts and notifications"
-  "Custom alerts and notifications" --> (*)
+  "Custom alerts and notifications" --> "Customize alerts and notifications"
 else
-  --> [No] (*)
+  --> [No] "Customize alerts and notifications"
+
+"Customize alerts and notifications" --> "Visualizations of user data over time"
+"Visualizations of user data over time" --> (*3)
 endif
 @enduml
