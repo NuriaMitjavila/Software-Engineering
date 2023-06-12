@@ -3,10 +3,12 @@ class MobileApp {
   - userId: String
   - username: String
   - password: String
+  - data: List<data>
   + login(username: String, password: String): boolean
   + registerUser(username: String, password: String): boolean
   + getGoals(): List<Goal>
   + getAlerts(): List<Alert>
+  + getData(): List<ProcessedData>
 }
 
 class Sensor {
@@ -18,18 +20,20 @@ class Sensor {
   + receiveData(): SensorData
 }
 
+class DataProcessor {
+  - data: List<ProcessedData>
+  + process(data: CollectedData): ProcessedData
+  + sendData(data: ProcessedData): void
+}
+
 class Panel {
   + displayData(data: List<Measurement>): void
 }
 
-class DataProcessor {
-  + process(data: SensorData): ProcessedData
-}
-
 class API {
-  - data: List<MobileApp>
-  + saveData(record: MobileApp): void
-  + getData(): List<MobileApp>
+  - data: List<API>
+  + saveData(record: data): void
+  + getData(): List<data>
 }
 
 class WebServer {
@@ -44,21 +48,19 @@ class Database {
 }
 
 class Goal {
-  - type: String
-  - value: double
-  + getType(): String
-  + getValue(): double
+  - data: List<Goal>
+  + getData(): List
 }
 
 class Alert {
-  - type: String
-  - threshold: double
-  + getType(): String
-  + getThreshold(): double
+  - data: List<Alert>
+  + getData(): List
 }
 
 class DataCollector {
+  - data: List<CollectedData>
   + collect(data: SensorData): CollectedData
+  + sendData(data: CollectedData): void
 }
 
 DataCollector ..> Sensor
